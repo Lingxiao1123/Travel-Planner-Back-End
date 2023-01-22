@@ -1,0 +1,16 @@
+update pois
+set category = 'sight'
+where id = 1;
+
+ALTER table user
+drop column name
+
+update pois
+set name = 'Griffith'
+where id = 2;
+
+insert into pois
+VALUES (id, cost, timeNeeded, city_id, address, latitude,longitude, category, imageURL, name)
+
+insert into pois
+VALUES (4, 0, 2, 1, 'Hollywood Sign, Los Angeles, CA 90068', 34.13432327,-118.3215478, 'sight', '', 'Hollywood Sign')
